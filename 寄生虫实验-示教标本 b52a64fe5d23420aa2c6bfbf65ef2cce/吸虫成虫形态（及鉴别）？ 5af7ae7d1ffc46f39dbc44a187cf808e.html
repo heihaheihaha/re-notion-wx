@@ -1,0 +1,689 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>吸虫成虫形态（及鉴别）？</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(0, 0, 0, 0.06); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="5af7ae7d-1ffc-46f3-9dbc-44a187cf808e" class="page sans"><header><img class="page-cover-image" src="https://www.notion.so/images/page-cover/nasa_the_blue_marble.jpg" style="object-position:center 50%"/><div class="page-header-icon page-header-icon-with-cover"><span class="icon">🍤</span></div><h1 class="page-title">吸虫成虫形态（及鉴别）？</h1><p class="page-description"></p></header><div class="page-body"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="2a2c7131-d70d-4412-bb4c-d4b2183ff7a8"><div style="font-size:1.5em"><span class="icon">✅</span></div><div style="width:100%"><p id="776e98e1-7ffa-414e-82f5-9840fc170a56" class="">Done</p></div></figure><figure id="5aaaec9d-14c7-4d5c-84b5-e7dee96ac683" class="image"><a href="%E5%90%B8%E8%99%AB%E6%88%90%E8%99%AB%E5%BD%A2%E6%80%81%EF%BC%88%E5%8F%8A%E9%89%B4%E5%88%AB%EF%BC%89%EF%BC%9F%205af7ae7d1ffc46f39dbc44a187cf808e/1a1ec376d95be12253105f2dc5ae4fdf.png"><img style="width:646px" src="%E5%90%B8%E8%99%AB%E6%88%90%E8%99%AB%E5%BD%A2%E6%80%81%EF%BC%88%E5%8F%8A%E9%89%B4%E5%88%AB%EF%BC%89%EF%BC%9F%205af7ae7d1ffc46f39dbc44a187cf808e/1a1ec376d95be12253105f2dc5ae4fdf.png"/></a></figure><div id="399bc433-24a8-4afb-a935-c6d09e71e882" class="column-list"><div id="4c224012-9ae5-44fd-99f5-3eeebbe22c96" style="width:25%" class="column"><figure id="a0c00e7f-2b11-40ed-ac6c-517054a875ea" class="image"><a href="%E5%90%B8%E8%99%AB%E6%88%90%E8%99%AB%E5%BD%A2%E6%80%81%EF%BC%88%E5%8F%8A%E9%89%B4%E5%88%AB%EF%BC%89%EF%BC%9F%205af7ae7d1ffc46f39dbc44a187cf808e/e7dca9a7-d713-4a0a-973d-0f76d37ac21b.png"><img style="width:320px" src="%E5%90%B8%E8%99%AB%E6%88%90%E8%99%AB%E5%BD%A2%E6%80%81%EF%BC%88%E5%8F%8A%E9%89%B4%E5%88%AB%EF%BC%89%EF%BC%9F%205af7ae7d1ffc46f39dbc44a187cf808e/e7dca9a7-d713-4a0a-973d-0f76d37ac21b.png"/></a><figcaption>卫氏并殖吸虫</figcaption></figure></div><div id="762e2e57-bd07-4a11-a61d-c08f45ea4227" style="width:25%" class="column"><figure id="c6714275-3079-46a3-9736-06383cf01059" class="image"><a href="%E5%90%B8%E8%99%AB%E6%88%90%E8%99%AB%E5%BD%A2%E6%80%81%EF%BC%88%E5%8F%8A%E9%89%B4%E5%88%AB%EF%BC%89%EF%BC%9F%205af7ae7d1ffc46f39dbc44a187cf808e/3925e4d7-d4e2-4d40-b71b-468f22cf1749.png"><img style="width:320px" src="%E5%90%B8%E8%99%AB%E6%88%90%E8%99%AB%E5%BD%A2%E6%80%81%EF%BC%88%E5%8F%8A%E9%89%B4%E5%88%AB%EF%BC%89%EF%BC%9F%205af7ae7d1ffc46f39dbc44a187cf808e/3925e4d7-d4e2-4d40-b71b-468f22cf1749.png"/></a><figcaption>斯氏狸殖吸虫</figcaption></figure></div><div id="3fcc0d1f-e67d-46ae-bec0-b16cf81477db" style="width:25%" class="column"><figure id="d7ecb40f-3c9a-49c1-b043-9ab3a815bf05" class="image"><a href="%E5%90%B8%E8%99%AB%E6%88%90%E8%99%AB%E5%BD%A2%E6%80%81%EF%BC%88%E5%8F%8A%E9%89%B4%E5%88%AB%EF%BC%89%EF%BC%9F%205af7ae7d1ffc46f39dbc44a187cf808e/b4b0d318-fc73-413f-b52f-31df595dc81c.png"><img style="width:320px" src="%E5%90%B8%E8%99%AB%E6%88%90%E8%99%AB%E5%BD%A2%E6%80%81%EF%BC%88%E5%8F%8A%E9%89%B4%E5%88%AB%EF%BC%89%EF%BC%9F%205af7ae7d1ffc46f39dbc44a187cf808e/b4b0d318-fc73-413f-b52f-31df595dc81c.png"/></a><figcaption>肝吸虫成虫</figcaption></figure><p id="91b4f6ff-3916-4ee0-bc99-de3d4f0e8255" class="">
+</p></div><div id="3fad355d-29f3-459c-bd9e-2c3c7c39400e" style="width:25%" class="column"><figure id="a18f5714-885d-4a04-b032-0b69f5e4fcfb" class="image"><a href="%E5%90%B8%E8%99%AB%E6%88%90%E8%99%AB%E5%BD%A2%E6%80%81%EF%BC%88%E5%8F%8A%E9%89%B4%E5%88%AB%EF%BC%89%EF%BC%9F%205af7ae7d1ffc46f39dbc44a187cf808e/9c3cbc8b-9186-4a65-8992-0826849c9b12.png"><img style="width:367.61394101876675px" src="%E5%90%B8%E8%99%AB%E6%88%90%E8%99%AB%E5%BD%A2%E6%80%81%EF%BC%88%E5%8F%8A%E9%89%B4%E5%88%AB%EF%BC%89%EF%BC%9F%205af7ae7d1ffc46f39dbc44a187cf808e/9c3cbc8b-9186-4a65-8992-0826849c9b12.png"/></a><figcaption>姜片虫成虫</figcaption></figure></div></div><hr id="4bff8a42-0c8a-4190-8aac-6b61ae3f28c9"/><div id="c8670fed-c198-48b0-a77f-0d803e0f0c30" class="column-list"><div id="0cf203e2-5de9-47dd-8a81-a9cee9bc2928" style="width:25%" class="column"><figure id="1cfd2ac1-7fc5-4474-8772-0a560777c185" class="image"><a href="%E5%90%B8%E8%99%AB%E6%88%90%E8%99%AB%E5%BD%A2%E6%80%81%EF%BC%88%E5%8F%8A%E9%89%B4%E5%88%AB%EF%BC%89%EF%BC%9F%205af7ae7d1ffc46f39dbc44a187cf808e/image.png"><img style="width:221.1484375px" src="%E5%90%B8%E8%99%AB%E6%88%90%E8%99%AB%E5%BD%A2%E6%80%81%EF%BC%88%E5%8F%8A%E9%89%B4%E5%88%AB%EF%BC%89%EF%BC%9F%205af7ae7d1ffc46f39dbc44a187cf808e/image.png"/></a><figcaption>卫氏并殖吸虫成虫模式图</figcaption></figure></div><div id="fe51597b-113a-4c70-bc8a-16f9ed3f65e3" style="width:25%" class="column"><figure id="4a9d3749-6b59-4453-a091-bb929bb2538e" class="image"><a href="%E5%90%B8%E8%99%AB%E6%88%90%E8%99%AB%E5%BD%A2%E6%80%81%EF%BC%88%E5%8F%8A%E9%89%B4%E5%88%AB%EF%BC%89%EF%BC%9F%205af7ae7d1ffc46f39dbc44a187cf808e/image%201.png"><img style="width:330.9921875px" src="%E5%90%B8%E8%99%AB%E6%88%90%E8%99%AB%E5%BD%A2%E6%80%81%EF%BC%88%E5%8F%8A%E9%89%B4%E5%88%AB%EF%BC%89%EF%BC%9F%205af7ae7d1ffc46f39dbc44a187cf808e/image%201.png"/></a><figcaption>斯氏狸殖吸虫</figcaption></figure></div><div id="e98865a6-e41a-406b-a313-a99a56aa278b" style="width:25%" class="column"><figure id="8cced612-f520-4b93-8790-4df98f1af32b" class="image"><a href="%E5%90%B8%E8%99%AB%E6%88%90%E8%99%AB%E5%BD%A2%E6%80%81%EF%BC%88%E5%8F%8A%E9%89%B4%E5%88%AB%EF%BC%89%EF%BC%9F%205af7ae7d1ffc46f39dbc44a187cf808e/image%202.png"><img style="width:330.9921875px" src="%E5%90%B8%E8%99%AB%E6%88%90%E8%99%AB%E5%BD%A2%E6%80%81%EF%BC%88%E5%8F%8A%E9%89%B4%E5%88%AB%EF%BC%89%EF%BC%9F%205af7ae7d1ffc46f39dbc44a187cf808e/image%202.png"/></a></figure></div><div id="90534962-722a-4059-9871-c187a4b4cad3" style="width:25%" class="column"><figure id="4ac6a389-8ac0-447c-8577-1ea4ed890ea8" class="image"><a href="%E5%90%B8%E8%99%AB%E6%88%90%E8%99%AB%E5%BD%A2%E6%80%81%EF%BC%88%E5%8F%8A%E9%89%B4%E5%88%AB%EF%BC%89%EF%BC%9F%205af7ae7d1ffc46f39dbc44a187cf808e/image%203.png"><img style="width:330.9921875px" src="%E5%90%B8%E8%99%AB%E6%88%90%E8%99%AB%E5%BD%A2%E6%80%81%EF%BC%88%E5%8F%8A%E9%89%B4%E5%88%AB%EF%BC%89%EF%BC%9F%205af7ae7d1ffc46f39dbc44a187cf808e/image%203.png"/></a><figcaption>姜片虫成虫模式图</figcaption></figure></div></div><h1 id="500890d8-63ad-4257-b05e-c213179cd10f" class="">血吸虫-裂体吸虫成虫</h1><p id="36e3e086-cc1d-4267-8643-e9305789d076" class="">
+</p><p id="44e0435d-2f68-4549-8d4e-727374b8d959" class="">
+</p><div id="24d137ca-4e89-47d3-882d-2274c9aa5ec8" class="column-list"><div id="88bc69ee-9e4b-4c81-b0a1-1b845fdcdbf5" style="width:50%" class="column"><figure id="ecbb1440-7c99-4ca8-a2c3-f5f014348db4" class="image"><a href="%E5%90%B8%E8%99%AB%E6%88%90%E8%99%AB%E5%BD%A2%E6%80%81%EF%BC%88%E5%8F%8A%E9%89%B4%E5%88%AB%EF%BC%89%EF%BC%9F%205af7ae7d1ffc46f39dbc44a187cf808e/22aea500-0110-46e2-830a-901fd9df0d63.png"><img style="width:320px" src="%E5%90%B8%E8%99%AB%E6%88%90%E8%99%AB%E5%BD%A2%E6%80%81%EF%BC%88%E5%8F%8A%E9%89%B4%E5%88%AB%EF%BC%89%EF%BC%9F%205af7ae7d1ffc46f39dbc44a187cf808e/22aea500-0110-46e2-830a-901fd9df0d63.png"/></a><figcaption>血吸虫成虫♂+♀</figcaption></figure></div><div id="52e05619-f813-4229-95b3-4ecb1f2dc402" style="width:50%" class="column"><figure id="ae85b0b2-09e4-4061-835c-bb1db0578495" class="image"><a href="%E5%90%B8%E8%99%AB%E6%88%90%E8%99%AB%E5%BD%A2%E6%80%81%EF%BC%88%E5%8F%8A%E9%89%B4%E5%88%AB%EF%BC%89%EF%BC%9F%205af7ae7d1ffc46f39dbc44a187cf808e/d6bef0f7-82ec-4eda-a1c5-a2586c0a77ec.png"><img style="width:320px" src="%E5%90%B8%E8%99%AB%E6%88%90%E8%99%AB%E5%BD%A2%E6%80%81%EF%BC%88%E5%8F%8A%E9%89%B4%E5%88%AB%EF%BC%89%EF%BC%9F%205af7ae7d1ffc46f39dbc44a187cf808e/d6bef0f7-82ec-4eda-a1c5-a2586c0a77ec.png"/></a><figcaption>曼氏血吸虫成虫</figcaption></figure></div></div><h1 id="9378c1be-315e-4bb1-acf6-adefc4e4de69" class="">并殖吸虫-肺吸虫成虫</h1><h2 id="4ff8033a-2721-44fb-b87e-633e10116027" class="">卫氏并殖吸虫</h2><p id="8d6af53f-52a9-4129-9638-6da33721b686" class="">成虫虫体肥厚，活体为暗红色，体形随其伸缩蠕动而改变，静止时外形椭圆，背面稍隆起，腹面扁平;其长为7~12mm，宽4~6mm，厚2~4mm。成虫体表披细小单生型尖刀状皮棘。口、腹吸盘大小相近，口吸盘位于虫体前端，腹吸盘位于虫体腹面中线前缘。消化器官包括口、咽、食管及肠管。口位于口吸盘中央，连接球形咽部及短小的食管，其后分为两支肠管沿虫体两侧形成3~4个弯曲延伸至虫体后部，以盲端终。卵巢6叶，与子宫并列于腹吸盘之后。2个睾丸分支如指状，并列于虫体后1/3处。<br/>由浓密的卵黄滤泡组成的卵黄腺分布于虫体两侧，经卵黄管汇合于卵黄囊，通人输卵管。排泄管长袋形，向后延伸，开口于虫体末端。卵巢形态、口吸盘大小之比例、睾丸分支及长度是并殖吸虫形态鉴别的重要依据<br/></p><div id="4bb4c42d-ddf7-491b-b93b-6654d17e2180" class="column-list"><div id="b0b68544-eb35-4f30-96b3-84190b56367f" style="width:33.333333333333336%" class="column"><figure id="23df869d-b5eb-44fa-8916-1e1b9b92a161" class="image"><a href="%E5%90%B8%E8%99%AB%E6%88%90%E8%99%AB%E5%BD%A2%E6%80%81%EF%BC%88%E5%8F%8A%E9%89%B4%E5%88%AB%EF%BC%89%EF%BC%9F%205af7ae7d1ffc46f39dbc44a187cf808e/e7dca9a7-d713-4a0a-973d-0f76d37ac21b.png"><img style="width:320px" src="%E5%90%B8%E8%99%AB%E6%88%90%E8%99%AB%E5%BD%A2%E6%80%81%EF%BC%88%E5%8F%8A%E9%89%B4%E5%88%AB%EF%BC%89%EF%BC%9F%205af7ae7d1ffc46f39dbc44a187cf808e/e7dca9a7-d713-4a0a-973d-0f76d37ac21b.png"/></a><figcaption>卫氏并殖吸虫</figcaption></figure></div><div id="f6c5530e-1439-4cb8-8c12-c3058cf583da" style="width:33.33333333333333%" class="column"><figure id="69540c29-b6f7-401f-adc7-bfaed0b286ba" class="image"><a href="%E5%90%B8%E8%99%AB%E6%88%90%E8%99%AB%E5%BD%A2%E6%80%81%EF%BC%88%E5%8F%8A%E9%89%B4%E5%88%AB%EF%BC%89%EF%BC%9F%205af7ae7d1ffc46f39dbc44a187cf808e/image.png"><img style="width:698px" src="%E5%90%B8%E8%99%AB%E6%88%90%E8%99%AB%E5%BD%A2%E6%80%81%EF%BC%88%E5%8F%8A%E9%89%B4%E5%88%AB%EF%BC%89%EF%BC%9F%205af7ae7d1ffc46f39dbc44a187cf808e/image.png"/></a><figcaption>卫氏并殖吸虫成虫模式图</figcaption></figure></div><div id="bf1c8952-e8d9-42c7-a961-be9f1f5dba6a" style="width:33.333333333333336%" class="column"><figure id="d23208be-e808-48c6-855a-78157bd366ae" class="image"><a href="%E5%90%B8%E8%99%AB%E6%88%90%E8%99%AB%E5%BD%A2%E6%80%81%EF%BC%88%E5%8F%8A%E9%89%B4%E5%88%AB%EF%BC%89%EF%BC%9F%205af7ae7d1ffc46f39dbc44a187cf808e/977476d9-9606-4dde-869f-317bb2e701e2.png"><img style="width:320px" src="%E5%90%B8%E8%99%AB%E6%88%90%E8%99%AB%E5%BD%A2%E6%80%81%EF%BC%88%E5%8F%8A%E9%89%B4%E5%88%AB%EF%BC%89%EF%BC%9F%205af7ae7d1ffc46f39dbc44a187cf808e/977476d9-9606-4dde-869f-317bb2e701e2.png"/></a><figcaption>肺吸虫体棘</figcaption></figure></div></div><h2 id="ec92c217-5374-4149-af51-932a4ad907e1" class="">斯氏狸殖吸虫</h2><p id="9693e443-8621-477e-9faa-a1c281f04ff4" class="">成虫虫体窄长，星梭形，长 11.0~18.5mm，宽3.5~6.0mm。虫体最宽处约在虫体前1/3或稍后，腹吸盘位于体前约1/3处，略大于口吸盘。卵巢位于腹吸盘后侧，形如珊瑚。睾丸2个，左右并列，为长形且有分支。</p><div id="86de6b66-44db-49bc-bf5c-eb7d3fc9e8e1" class="column-list"><div id="f2f34d56-8822-443c-87aa-82319b26dfc9" style="width:50%" class="column"><figure id="a1489496-b1b3-4f5a-b133-8f8413831d5a" class="image"><a href="%E5%90%B8%E8%99%AB%E6%88%90%E8%99%AB%E5%BD%A2%E6%80%81%EF%BC%88%E5%8F%8A%E9%89%B4%E5%88%AB%EF%BC%89%EF%BC%9F%205af7ae7d1ffc46f39dbc44a187cf808e/3925e4d7-d4e2-4d40-b71b-468f22cf1749.png"><img style="width:320px" src="%E5%90%B8%E8%99%AB%E6%88%90%E8%99%AB%E5%BD%A2%E6%80%81%EF%BC%88%E5%8F%8A%E9%89%B4%E5%88%AB%EF%BC%89%EF%BC%9F%205af7ae7d1ffc46f39dbc44a187cf808e/3925e4d7-d4e2-4d40-b71b-468f22cf1749.png"/></a><figcaption>斯氏狸殖吸虫</figcaption></figure></div><div id="cab9408e-2d1d-4cdd-ae2a-659f71bd67af" style="width:50%" class="column"><figure id="7cbea33c-763c-4175-8305-4a35f19244e4" class="image"><a href="%E5%90%B8%E8%99%AB%E6%88%90%E8%99%AB%E5%BD%A2%E6%80%81%EF%BC%88%E5%8F%8A%E9%89%B4%E5%88%AB%EF%BC%89%EF%BC%9F%205af7ae7d1ffc46f39dbc44a187cf808e/image%201.png"><img style="width:330.9921875px" src="%E5%90%B8%E8%99%AB%E6%88%90%E8%99%AB%E5%BD%A2%E6%80%81%EF%BC%88%E5%8F%8A%E9%89%B4%E5%88%AB%EF%BC%89%EF%BC%9F%205af7ae7d1ffc46f39dbc44a187cf808e/image%201.png"/></a><figcaption>斯氏狸殖吸虫</figcaption></figure></div></div><p id="7e1cfd92-fc07-4ace-8382-91b4e914c489" class="">
+</p><h1 id="442ad436-9c89-4e9c-8d23-447245a79b1d" class="">华支睾吸虫-肝吸虫成虫</h1><p id="9e8cc6b3-3678-4d29-9431-60052c07f6a5" class="">成虫体形狭长，背腹扁平，前端稍窄，后端钝圆，<mark class="highlight-red">形似葵花籽</mark>，雌雄同体。虫体大小一般力(10~25) mm x(3~5)mm。口吸盘略大于腹吸盘，前者位于体前端，后者位于虫体前1/5处。消化道简单，口位于口吸盘的中央，咽星球形，食管短，其后为肠支。肠支分为两支，沿虫体两侧直达后端，不汇合，末端为盲端。排泄囊在体后为一略带弯曲的长袋，前端到达受精囊水平处，并向前端发出左右两支集合管，排泄孔开口于虫体末端。雄性生殖器官有睾丸1对，前后排列于虫体后部1/3处，呈分枝状。两睾丸各发出1条输出管，向前约在虫体中部汇合成输精管，与贮精囊相通，经射精管进入位于腹吸盘前缘的生殖腔，缺阴茎袋、阴茎和前列腺。雌性生殖器官有卵巢1个，浅分叶状，位于睾丸之前，输卵管发自卵巢，其远端为卵模，卵模周围为梅氏腺。卵模之前为子宫，盘绕向前开口于生殖腔。<br/>受精囊在睾丸与卵巢之间，呈椭圆形，与输卵管相通。劳氏管位于受精囊旁，也与输卵管相通，为短管，开口于虫体背面。卵黄腺呈滤泡状，分布于虫体的两侧，两条卵黄腺管汇合后，与输卵管相通。<br/></p><div id="ab2fc510-4dcd-47ec-aba7-eb1c5250b55e" class="column-list"><div id="2c89266c-3dfa-4c97-92cc-4172ffc70647" style="width:50%" class="column"><figure id="be0d5ade-836b-4654-b0e0-4daea9362e9f" class="image"><a href="%E5%90%B8%E8%99%AB%E6%88%90%E8%99%AB%E5%BD%A2%E6%80%81%EF%BC%88%E5%8F%8A%E9%89%B4%E5%88%AB%EF%BC%89%EF%BC%9F%205af7ae7d1ffc46f39dbc44a187cf808e/b4b0d318-fc73-413f-b52f-31df595dc81c.png"><img style="width:320px" src="%E5%90%B8%E8%99%AB%E6%88%90%E8%99%AB%E5%BD%A2%E6%80%81%EF%BC%88%E5%8F%8A%E9%89%B4%E5%88%AB%EF%BC%89%EF%BC%9F%205af7ae7d1ffc46f39dbc44a187cf808e/b4b0d318-fc73-413f-b52f-31df595dc81c.png"/></a><figcaption>肝吸虫成虫</figcaption></figure></div><div id="d0ff1271-4951-46d5-8fd9-f2d9f7c74c39" style="width:50%" class="column"><figure id="d596deb3-de15-4a9e-b7d8-efe3a3fecf9a" class="image"><a href="%E5%90%B8%E8%99%AB%E6%88%90%E8%99%AB%E5%BD%A2%E6%80%81%EF%BC%88%E5%8F%8A%E9%89%B4%E5%88%AB%EF%BC%89%EF%BC%9F%205af7ae7d1ffc46f39dbc44a187cf808e/image%202.png"><img style="width:330.9921875px" src="%E5%90%B8%E8%99%AB%E6%88%90%E8%99%AB%E5%BD%A2%E6%80%81%EF%BC%88%E5%8F%8A%E9%89%B4%E5%88%AB%EF%BC%89%EF%BC%9F%205af7ae7d1ffc46f39dbc44a187cf808e/image%202.png"/></a><figcaption>肝吸虫成虫模式图</figcaption></figure></div></div><div id="bd58517b-e19d-4ec7-a67f-18dfbdcd9d48" class="column-list"><div id="0ed1e8d4-a256-455c-86bf-edded9c46259" style="width:50%" class="column"><figure id="c0396bfb-2651-4b20-8cc4-bc6187d61b20" class="image"><a href="%E5%90%B8%E8%99%AB%E6%88%90%E8%99%AB%E5%BD%A2%E6%80%81%EF%BC%88%E5%8F%8A%E9%89%B4%E5%88%AB%EF%BC%89%EF%BC%9F%205af7ae7d1ffc46f39dbc44a187cf808e/b1fa2001-4d3c-4146-83cc-31c8a47f114f.png"><img style="width:320px" src="%E5%90%B8%E8%99%AB%E6%88%90%E8%99%AB%E5%BD%A2%E6%80%81%EF%BC%88%E5%8F%8A%E9%89%B4%E5%88%AB%EF%BC%89%EF%BC%9F%205af7ae7d1ffc46f39dbc44a187cf808e/b1fa2001-4d3c-4146-83cc-31c8a47f114f.png"/></a><figcaption>肝吸虫成虫2.1</figcaption></figure></div><div id="993c5640-225c-41da-a696-037a1ad7dc92" style="width:50%" class="column"><figure id="63c436cf-7371-4ea9-8a34-505194ce0218" class="image"><a href="%E5%90%B8%E8%99%AB%E6%88%90%E8%99%AB%E5%BD%A2%E6%80%81%EF%BC%88%E5%8F%8A%E9%89%B4%E5%88%AB%EF%BC%89%EF%BC%9F%205af7ae7d1ffc46f39dbc44a187cf808e/ed7dbfb0-3d61-4c25-95c8-dcc785647ae9.png"><img style="width:320.2169491525424px" src="%E5%90%B8%E8%99%AB%E6%88%90%E8%99%AB%E5%BD%A2%E6%80%81%EF%BC%88%E5%8F%8A%E9%89%B4%E5%88%AB%EF%BC%89%EF%BC%9F%205af7ae7d1ffc46f39dbc44a187cf808e/ed7dbfb0-3d61-4c25-95c8-dcc785647ae9.png"/></a><figcaption>肝吸虫成虫2.2</figcaption></figure></div></div><h1 id="af5a9e39-eb55-4440-872d-5c811f00a9a5" class="">布氏姜片吸虫-姜片虫</h1><div id="82fe448d-20ba-4387-8d7a-4555bbdb25f7" class="column-list"><div id="0da4cee7-26d4-4a86-81f1-700eef4fd86a" style="width:50%" class="column"><figure id="d370ee61-0444-4443-899b-ca4acf575b01" class="image"><a href="%E5%90%B8%E8%99%AB%E6%88%90%E8%99%AB%E5%BD%A2%E6%80%81%EF%BC%88%E5%8F%8A%E9%89%B4%E5%88%AB%EF%BC%89%EF%BC%9F%205af7ae7d1ffc46f39dbc44a187cf808e/9c3cbc8b-9186-4a65-8992-0826849c9b12.png"><img style="width:367.61394101876675px" src="%E5%90%B8%E8%99%AB%E6%88%90%E8%99%AB%E5%BD%A2%E6%80%81%EF%BC%88%E5%8F%8A%E9%89%B4%E5%88%AB%EF%BC%89%EF%BC%9F%205af7ae7d1ffc46f39dbc44a187cf808e/9c3cbc8b-9186-4a65-8992-0826849c9b12.png"/></a><figcaption>姜片虫成虫</figcaption></figure></div><div id="33ba3e69-5ce1-40ef-846f-7503771c98c3" style="width:50%" class="column"><figure id="ba90e2d9-cf92-4c1b-8a83-1e3cbd089c89" class="image"><a href="%E5%90%B8%E8%99%AB%E6%88%90%E8%99%AB%E5%BD%A2%E6%80%81%EF%BC%88%E5%8F%8A%E9%89%B4%E5%88%AB%EF%BC%89%EF%BC%9F%205af7ae7d1ffc46f39dbc44a187cf808e/image%203.png"><img style="width:330.9921875px" src="%E5%90%B8%E8%99%AB%E6%88%90%E8%99%AB%E5%BD%A2%E6%80%81%EF%BC%88%E5%8F%8A%E9%89%B4%E5%88%AB%EF%BC%89%EF%BC%9F%205af7ae7d1ffc46f39dbc44a187cf808e/image%203.png"/></a><figcaption>姜片虫成虫模式图</figcaption></figure></div></div><p id="a5b2b44d-f512-43d1-be63-bb2b70388a65" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
